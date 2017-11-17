@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Badger Mushroom Game</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="banner">
+                <img src="assets/images/banner.png" alt="Badger Mushroom Game" class="responsive" id="topbanner">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="jumbotron">
+        	<div class = "row text-center">
+        		<div class = "col-md-12">
+	        		<h1 id="intro">Click the mushrooms to play!</h1>
+	        		<p>Badgers love mushrooms, but mushrooms can be toxic. Eat all the mushrooms you can, but don't get sick by eating too many.</p>
+	        	</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-4 text-center">
+        			<h3>Your score: <div id="score"></div></h3>
+        		</div>
+        		<div class="col-md-2 text-center">
+        			<p>Wins: <div id="wins"></div></p>
+        			<p>Losses: <div id="losses"></div></p>
+        		</div>
+        		<div class="col-md-6 text-center">
+        			<h3>Toxicity threshold: <div id="toxicity"></div></h3>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-3">
+        			<img class="mushroom" 
+        			id="mushroom1" 
+        			src="assets/images/mushroom-1.jpeg"
+        			alt="Mushroom 1">
+        		</div>
+        		<div class="col-md-3">
+        			<img class="mushroom"
+        			id="mushroom2" 
+        			src="assets/images/mushroom-2.jpeg" 
+        			alt="Mushroom 1">
+        		</div>
+        		<div class="col-md-3">
+        			<img class="mushroom" 
+        			id="mushroom3" 
+        			src="assets/images/mushroom-3.jpeg" alt="Mushroom 1">
+        		</div>
+        		<div class="col-md-3">
+        			<img class="mushroom" 
+        			id="mushroom4" 
+        			src="assets/images/mushroom-4.jpeg" 
+        			alt="Mushroom 1">
+        		</div>
+        	</div>
+
+        </div>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
