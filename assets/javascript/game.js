@@ -8,8 +8,6 @@ $(document).ready(function() {
 	var wins = 0
 	var losses = 0
 
-
-
 	function gameStart() {
 		
 
@@ -50,8 +48,7 @@ $(document).ready(function() {
 			$('#score').text(score);
 		})
 
-
-		// victory condition
+		// victory/loss condition
 		$(this).click(function() {
 			if (score == toxicity) {
 				wins++;
@@ -66,9 +63,12 @@ $(document).ready(function() {
 				score = 0;
 				gameStart();
 			}
-		})
+
+		}) // end victory/loss
+	} // end gameStart
+
+	if (wins == 0) {
+		gameStart();
 	}
 
-
-	gameStart()
 })
